@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Heading Section Copier</title>
+
+  <meta
+    name="description"
+    content="Heading Section Copier is an add-on for Google Docs™ that copies the current section based on the document’s heading structure while preserving supported formatting."
+  >
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="/" aria-label="Sumerovia home">Sumerovia</a>
+
+      <div>
+        <a href="/">Home</a>
+        <a href="/heading-section-copier/" aria-current="page">Heading Section Copier</a>
+        <a href="/support/">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>An add-on for Google Docs™</p>
+      <h1>Heading Section Copier</h1>
+      <p>
+        Copy the current section based on the document’s heading structure
+        while preserving supported formatting.
+      </p>
+    </section>
+
+    <section>
+      <h2>What it does</h2>
+
+      <p>
+        Heading Section Copier identifies the section that contains the cursor
+        or a selection by using Heading 1 through Heading 6 in the current
+        document.
+      </p>
+
+      <p>
+        A section starts with its heading and includes its content and
+        lower-level subheadings. It ends immediately before the next heading
+        of the same level or a higher level.
+      </p>
+    </section>
+
+    <section>
+      <h2>How to use it</h2>
+
+      <ol>
+        <li>
+          Place the cursor inside a section, or make a selection that stays
+          entirely within one section.
+        </li>
+        <li>Run <strong>Copy current section</strong>.</li>
+        <li>Review the generated preview.</li>
+        <li>Select <strong>Copy section</strong>.</li>
+        <li>
+          Paste the result into Google Docs or another application that accepts
+          clipboard content.
+        </li>
+      </ol>
+
+      <p>
+        If a selection crosses a section boundary, the add-on does not copy
+        content based only on where the selection starts. Keep the cursor or
+        selection within a single section and try again.
+      </p>
+    </section>
+
+    <section>
+      <h2>Supported formatting</h2>
+
+      <p>
+        The current implementation has been tested with the following content
+        and formatting:
+      </p>
+
+      <ul>
+        <li>Headings and paragraphs</li>
+        <li>Bold, italic, underline, and strikethrough</li>
+        <li>Font family and size</li>
+        <li>Text color and background color</li>
+        <li>Links</li>
+        <li>Superscript and subscript</li>
+        <li>Alignment and text direction</li>
+        <li>Indentation</li>
+        <li>Bulleted and numbered lists, including nested levels</li>
+        <li>Tables</li>
+        <li>Inline images</li>
+      </ul>
+
+      <p>
+        The add-on also provides a <code>text/plain</code> representation as a
+        fallback alongside formatted clipboard content.
+      </p>
+    </section>
+
+    <section>
+      <h2>Limitations</h2>
+
+      <p>
+        Heading Section Copier preserves supported content and formatting, but
+        it does not guarantee an exact reproduction of every internal Google
+        Docs property.
+      </p>
+
+      <p>
+        Some paragraph or heading properties, table data, and image or table
+        dimensions may vary slightly after pasting. The final result also
+        depends in part on how the receiving application handles clipboard
+        content.
+      </p>
+
+      <p>
+        Features or element types that have not been explicitly tested are not
+        described as supported.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Legal">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+    </nav>
+  </footer>
+</body>
+</html>
