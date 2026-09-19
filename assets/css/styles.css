@@ -1,11 +1,11 @@
 :root {
-  --bg: #f7f8fa;
+  --bg: #f7f4ec;
   --surface: #ffffff;
-  --text: #1f2937;
-  --muted: #667085;
-  --border: #e5e7eb;
-  --accent: #1d4ed8;
-  --accent-hover: #1e40af;
+  --text: #242629;
+  --muted: #62605b;
+  --border: #ded8cc;
+  --accent: #b97845;
+  --accent-hover: #965d33;
   --max-width: 1120px;
   --radius: 16px;
   --shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
@@ -62,10 +62,15 @@ header nav {
 }
 
 header nav > a:first-child {
-  color: var(--text);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(168px, 20vw, 220px);
+  height: auto;
 }
 
 header nav > div {
@@ -177,7 +182,7 @@ footer a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid rgba(29, 78, 216, 0.35);
+  outline: 3px solid rgba(185, 120, 69, 0.42);
   outline-offset: 3px;
 }
 
