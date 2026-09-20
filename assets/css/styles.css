@@ -84,7 +84,17 @@ header nav a {
   font-weight: 600;
 }
 
-header nav a[aria-current="page"] {
+header nav > div a,
+header nav > div a:visited {
+  color: var(--accent);
+}
+
+header nav > div a:hover {
+  color: var(--accent-hover);
+}
+
+header nav > div a[aria-current="page"],
+header nav > div a[aria-current="page"]:visited {
   color: var(--text);
 }
 
