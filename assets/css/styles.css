@@ -106,8 +106,21 @@ main {
 }
 
 main > section:first-child {
-  max-width: 760px;
+  max-width: 920px;
   padding: 40px 0 64px;
+}
+
+.product-hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+}
+
+.product-icon {
+  display: block;
+  width: 128px;
+  height: 128px;
 }
 
 h1,
@@ -229,6 +242,16 @@ a:focus-visible {
 
   main > section:first-child {
     padding: 28px 0 48px;
+  }
+
+  .product-hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-icon {
+    width: 96px;
+    height: 96px;
   }
 
   article {
