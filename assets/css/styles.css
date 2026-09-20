@@ -96,6 +96,9 @@ header nav > div a:hover {
 header nav > div a[aria-current="page"],
 header nav > div a[aria-current="page"]:visited {
   color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
 main {
