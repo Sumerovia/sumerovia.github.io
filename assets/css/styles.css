@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   --bg: #f7f4ec;
   --surface: #ffffff;
   --text: #242629;
@@ -88,12 +89,12 @@ header nav a[aria-current="page"] {
 }
 
 main {
-  padding: 56px 0 72px;
+  padding: 32px 0 72px;
 }
 
 main > section:first-child {
   max-width: 760px;
-  padding: 56px 0 72px;
+  padding: 40px 0 64px;
 }
 
 h1,
@@ -186,6 +187,19 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f2328;
+    --surface: #242629;
+    --text: #f7f4ec;
+    --muted: #c9c2b6;
+    --border: #46494d;
+    --accent: #d89a68;
+    --accent-hover: #edb98e;
+    --shadow: none;
+  }
+}
+
 @media (max-width: 720px) {
   header nav {
     align-items: flex-start;
@@ -197,11 +211,11 @@ a:focus-visible {
   }
 
   main {
-    padding-top: 20px;
+    padding-top: 12px;
   }
 
   main > section:first-child {
-    padding: 40px 0 56px;
+    padding: 28px 0 48px;
   }
 
   article {
