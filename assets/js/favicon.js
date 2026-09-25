@@ -9,8 +9,8 @@
 
   const updateFavicon = () => {
     favicon.href = colorScheme.matches
-      ? "/assets/brand/favicon/favicon-dark-32.png"
-      : "/assets/brand/favicon/favicon-32.png";
+      ? "/assets/brand/favicon/favicon-dark-64.png"
+      : "/assets/brand/favicon/favicon-64.png";
   };
 
   updateFavicon();
