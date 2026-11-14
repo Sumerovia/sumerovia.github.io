@@ -2,24 +2,38 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>سياسة الخصوصية — ادرس حوزة (EdrosHawza) | Sumerovia</title>
+<title>سياسة الخصوصية — ادرس حوزة | Sumerovia</title>
 <meta name="description" content="سياسة خصوصية تطبيق ادرس حوزة من Sumerovia: البيانات المحلية، التنزيلات، الإشعارات، وخدمات الشبكة.">
 <link rel="icon" type="image/png" href="/assets/brand/favicon/favicon-64.png">
 <link rel="stylesheet" href="/assets/css/styles.css">
-<style>main{max-width:58rem;margin:auto;padding:1.5rem;line-height:1.9}h1,h2,p,li{text-align:start}code,a{overflow-wrap:anywhere}.contact{direction:ltr;unicode-bidi:isolate;display:inline-block}</style>
+<style>
+main{max-width:58rem;padding:1.5rem;line-height:1.9}
+main>section:first-child{padding:1rem 0 1.5rem}
+main>section:first-child p{font-size:1rem;line-height:1.9;margin-bottom:1rem}
+main section{margin-bottom:2rem}
+h1,h2,p,li{text-align:start}
+h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.5;letter-spacing:normal}
+h2{font-size:1.4rem;line-height:1.6;letter-spacing:normal;margin-bottom:.75rem}
+main a{text-decoration:underline;text-underline-offset:.2em}
+code,a{overflow-wrap:anywhere}
+.contact{direction:ltr;unicode-bidi:isolate;display:inline-block}
+@media(max-width:480px){main{padding:1rem .5rem}header nav{gap:.75rem}}
+</style>
 </head>
 <body>
 <header><nav aria-label="التنقل"><a href="/">Sumerovia</a><a href="#english" lang="en" dir="ltr">English summary</a></nav></header>
 <main>
 <section><h1>سياسة خصوصية ادرس حوزة</h1>
-<p>تخص هذه السياسة تطبيق Android «ادرس حوزة» (EdrosHawza)، الذي تطوره Sumerovia، والحزمة <bdi>com.sumerovia.edroshawza</bdi>. يتيح التطبيق تصفح الكتب والدروس وقراءتها وتشغيلها وتنزيلها للاستخدام دون اتصال.</p>
+<p>تخص هذه السياسة تطبيق Android «ادرس حوزة»، الذي تطوره Sumerovia. يتيح التطبيق تصفح الكتب والدروس وقراءتها وتشغيلها وتنزيلها للاستخدام دون اتصال.</p>
 <p>تاريخ السريان: 14 نوفمبر 2026.</p></section>
 <section><h2>البيانات التي يحتفظ بها التطبيق على الجهاز</h2>
 <p>يحتفظ التطبيق محليًا بالمفضلة، ومواضع القراءة والمشاهدة، والعلامات المرجعية وأسمائها، وإعدادات التنزيل، وفهرس المحتوى، والملفات المنزلة والملفات المؤقتة. تُستخدم هذه البيانات لتقديم الوظائف التي تختارها واستئنافها. لا يتطلب الإصدار الحالي إنشاء حساب مستخدم داخل التطبيق، ولا ينفذ مزامنة لتقدم القراءة والعلامات والمفضلة إلى حساب لدى Sumerovia.</p>
 <p>قد يشمل النسخ الاحتياطي أو نقل الجهاز الذي يوفره Android بعض بيانات التطبيق بحسب إعدادات النظام والمستخدم. لذلك لا يعني وصف البيانات بأنها محلية استبعاد نسخ النظام الاحتياطية. تخضع هذه الخدمات لسياسات مزود النظام.</p></section>
 <section><h2>طلبات الشبكة والجهات المقدمة للخدمة</h2>
 <p>يتصل التطبيق بخدمات نشر المحتوى واستضافته للحصول على الفهرس والأغلفة والكتب والوسائط والتحديثات. تتضمن هذه الاتصالات معلومات الاتصال المعتادة، مثل عنوان IP وبيانات الطلب التقنية اللازمة لتوصيله. قد تعالج خدمات الاستضافة وتوصيل المحتوى سجلات تقنية للتشغيل والحماية من الإساءة؛ تتبع مدة الاحتفاظ هذه الخدمات وإعداداتها.</p>
+<p>تُستضاف خدمات نشر المحتوى وملفاته عبر Cloudflare Workers وR2. للمزيد: <a href="https://www.cloudflare.com/privacypolicy/">سياسة خصوصية Cloudflare</a>.</p>
 <p>يستخدم التطبيق Firebase Cloud Messaging من Google لإشعارات تحديث المحتوى. تستخدم هذه الخدمة معرف تثبيت Firebase ومعرفات تسجيل الإشعارات اللازمة لإيصال الرسائل. تعطيل عرض الإشعارات من إعدادات Android لا يعني بالضرورة إيقاف تهيئة خدمة Firebase أو حذف معرف التثبيت لديها.</p>
+<p>يبدأ الاشتراك في إشعارات تحديث المحتوى تلقائيًا عند تهيئة التطبيق المجهز بإعداد Firebase. تعالج حزم Firebase أيضًا إصدار التطبيق ومعلومات تقنية عن الجهاز والنظام وإصدارات الحزم المستخدمة، لأغراض تشغيل الخدمة وصيانتها وتحسينها. لا يمثل معرّف التثبيت حسابًا باسمك أو معرّفًا ثابتًا للجهاز المادي.</p>
 <p>معلومات إضافية: <a href="https://firebase.google.com/support/privacy">خصوصية Firebase</a> و<a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p></section>
 <section><h2>الأذونات ووظائف الخلفية</h2>
 <ul>
@@ -31,15 +45,16 @@
 <section><h2>الإعلانات والتحليلات</h2>
 <p>لا يتضمن الإصدار الحالي حزم إعلانات أو Google Analytics أو وظائف لبناء ملفات إعلانية للمستخدمين. لا يُستخدم تقدم القراءة أو العلامات أو المفضلة للإعلانات. وجود خدمات الإشعارات والشبكة ومعالجتها للمعرفات والبيانات التقنية موضح أعلاه، ولا تعني هذه الفقرة أن التطبيق يعمل دون أي معالجة لبيانات الجهاز.</p></section>
 <section><h2>الروابط والفتح باستخدام تطبيق آخر</h2>
-<p>عندما تختار فتح رابط تواصل أو محتوى في YouTube أو فتح كتاب بتطبيق خارجي، ينتقل الطلب إلى الخدمة أو التطبيق الذي تختاره. قد تُمنح للتطبيق الخارجي صلاحية مؤقتة لقراءة ملف الكتاب الذي طلبت فتحه. تخضع معالجة تلك الجهات لسياساتها، ولا تنطبق سياسة إضافة Heading Section Copier على هذا التطبيق.</p></section>
+<p>عندما تختار فتح رابط تواصل أو محتوى في YouTube أو فتح كتاب بتطبيق خارجي، ينتقل الطلب إلى الخدمة أو التطبيق الذي تختاره. قد تُمنح للتطبيق الخارجي صلاحية مؤقتة لقراءة ملف الكتاب الذي طلبت فتحه. تخضع معالجة تلك الجهات لسياساتها.</p></section>
 <section><h2>الاحتفاظ بالبيانات وحذفها</h2>
 <p>تبقى المفضلة والتقدم والعلامات والإعدادات المحلية لتقديم وظائف الاستئناف إلى أن تعدلها أو تحذف بيانات التطبيق. يمكنك حذف التنزيلات والعلامات والمفضلة المتاحة من داخل التطبيق، أو استخدام إعدادات Android لمسح بياناته أو إزالته. مسح البيانات يزيل النسخة المحلية، وقد تؤثر إعدادات نسخ Android الاحتياطية في استعادتها لاحقًا.</p>
 <p>تُدار المعرفات والسجلات الموجودة لدى مزودي خدمات الشبكة والإشعارات وفق سياساتهم؛ لا يؤدي حذف ملف محلي أو تعطيل عرض الإشعارات وحده إلى ضمان حذف كل سجل خارجي. للاستفسار عن معالجة بيانات متعلقة بالتطبيق، تواصل معنا بالبريد أدناه.</p></section>
 <section><h2>الأمان والتغييرات</h2>
 <p>يستخدم التطبيق اتصالات HTTPS لمصادر المحتوى المنشورة، وضوابط تخزين وصلاحيات Android. لا يمكن ضمان أمان مطلق لكل جهاز أو شبكة. قد تتغير هذه السياسة عند تغير وظائف التطبيق أو الجهات التي تعالج البيانات؛ يعرض هذا الرابط النسخة المحدثة وتاريخها.</p></section>
-<section><h2>التواصل</h2><p>Sumerovia — للاستفسارات المتعلقة بخصوصية EdrosHawza: <a class="contact" href="mailto:sumerovia@gmail.com">sumerovia@gmail.com</a>. يرجى ذكر اسم التطبيق وعدم إرسال كلمات مرور أو محتوى خاص غير لازم لطلبك.</p></section>
+<section><h2>التواصل</h2><p>Sumerovia — للاستفسارات المتعلقة بخصوصية تطبيق ادرس حوزة: <a class="contact" href="mailto:sumerovia@gmail.com">sumerovia@gmail.com</a>. يرجى ذكر اسم التطبيق وعدم إرسال كلمات مرور أو محتوى خاص غير لازم لطلبك.</p></section>
 <section id="english" lang="en" dir="ltr"><h2>English summary</h2>
-<p>This policy covers EdrosHawza (ادرس حوزة), Android package com.sumerovia.edroshawza, developed by Sumerovia. Reading and playback positions, bookmarks, favorites, downloads and settings are stored on the device; Android backup or device transfer may also process app data under the user's system settings. The app retrieves content over the network, whose providers process ordinary connection and request data. Firebase Cloud Messaging processes installation and registration identifiers for notifications. Turning off notification display does not necessarily disable Firebase initialization or delete its identifiers.</p>
+<p>This policy covers ادرس حوزة, Android package com.sumerovia.edroshawza, developed by Sumerovia. Reading and playback positions, bookmarks, favorites, downloads and settings are stored on the device; Android backup or device transfer may also process app data under the user's system settings. The app retrieves content through Cloudflare Workers and R2, whose provider processes ordinary connection and request data. Firebase Cloud Messaging processes installation and registration identifiers for notifications. Turning off notification display does not necessarily disable Firebase initialization or delete its identifiers.</p>
+<p>Content notification subscription starts automatically when Firebase is configured. Firebase also processes app version and technical device, system and SDK metadata to operate, maintain and improve its services. An installation ID is not a named account or a permanent physical device identifier.</p>
 <p>The current release has no advertising or Google Analytics integration, and does not request camera, microphone, contacts or location access. External links and externally opened PDFs are handled by the chosen providers and apps. Local data can be removed through the app's available controls or Android settings; provider-side identifiers and logs follow those providers' policies. Contact: sumerovia@gmail.com. Effective date: November 14, 2026. The full policy is provided above in Arabic.</p></section>
 </main>
 <footer><nav aria-label="روابط"><a href="/">Sumerovia</a><a href="mailto:sumerovia@gmail.com">التواصل</a></nav></footer>
