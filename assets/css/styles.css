@@ -138,12 +138,12 @@ a:focus-visible {
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #1f2328;
-      --text: #f7f4ec;
+    --text: #f7f4ec;
     --muted: #c9c2b6;
     --border: #46494d;
     --accent: #d89a68;
     --accent-hover: #edb98e;
-    }
+  }
 }
 
 @media (max-width: 720px) {
@@ -159,5 +159,4 @@ a:focus-visible {
   main > section:first-child {
     padding: 28px 0 48px;
   }
-
 }
