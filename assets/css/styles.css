@@ -1,15 +1,12 @@
 :root {
   color-scheme: light dark;
   --bg: #f7f4ec;
-  --surface: #ffffff;
   --text: #242629;
   --muted: #62605b;
   --border: #ded8cc;
   --accent: #b97845;
   --accent-hover: #965d33;
   --max-width: 1120px;
-  --radius: 16px;
-  --shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
 }
 
 * {
@@ -74,31 +71,8 @@ header nav > a:first-child {
   height: auto;
 }
 
-header nav > div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 header nav a {
   font-weight: 600;
-}
-
-header nav > div a,
-header nav > div a:visited {
-  color: var(--accent);
-}
-
-header nav > div a:hover {
-  color: var(--accent-hover);
-}
-
-header nav > div a[aria-current="page"],
-header nav > div a[aria-current="page"]:visited {
-  color: var(--text);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
 }
 
 main {
@@ -108,19 +82,6 @@ main {
 main > section:first-child {
   max-width: 920px;
   padding: 40px 0 64px;
-}
-
-.product-hero {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: center;
-  gap: 28px;
-}
-
-.product-icon {
-  display: block;
-  width: 128px;
-  height: 128px;
 }
 
 h1,
@@ -147,45 +108,6 @@ h2 {
   margin-bottom: 24px;
   font-size: 2rem;
   letter-spacing: -0.035em;
-}
-
-article {
-  max-width: 720px;
-  padding: 32px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-article h3 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  letter-spacing: -0.025em;
-}
-
-article p {
-  color: var(--muted);
-}
-
-article p:last-of-type {
-  margin-bottom: 24px;
-}
-
-article > a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 10px 16px;
-  color: #ffffff;
-  background: var(--accent);
-  border-radius: 10px;
-  font-weight: 700;
-}
-
-article > a:hover {
-  color: #ffffff;
-  background: var(--accent-hover);
 }
 
 footer {
@@ -216,24 +138,18 @@ a:focus-visible {
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #1f2328;
-    --surface: #242629;
-    --text: #f7f4ec;
+      --text: #f7f4ec;
     --muted: #c9c2b6;
     --border: #46494d;
     --accent: #d89a68;
     --accent-hover: #edb98e;
-    --shadow: none;
-  }
+    }
 }
 
 @media (max-width: 720px) {
   header nav {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  header nav > div {
-    gap: 14px 18px;
   }
 
   main {
@@ -244,17 +160,4 @@ a:focus-visible {
     padding: 28px 0 48px;
   }
 
-  .product-hero {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .product-icon {
-    width: 96px;
-    height: 96px;
-  }
-
-  article {
-    padding: 24px;
-  }
 }
